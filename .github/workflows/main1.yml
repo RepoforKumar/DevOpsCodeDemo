@@ -1,0 +1,11 @@
+# .github/workflows/workflow-a.yml
+name: Workflow A
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  call_b:
+    uses: ./.github/workflows/main.yml
