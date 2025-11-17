@@ -1,0 +1,12 @@
+# .github/workflows/workflow-b.yml
+name: Workflow B
+
+on:
+  workflow_call:
+
+jobs:
+  run-b:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Running Workflow B
+        run: echo "Workflow B executed as reusable workflow!"
